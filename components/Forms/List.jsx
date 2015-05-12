@@ -1,5 +1,4 @@
 var React = require('react');
-var Field = require('./Field');
 
 var List = React.createClass({
 
@@ -11,6 +10,12 @@ var List = React.createClass({
     error: React.PropTypes.string,
     addButton: React.PropTypes.bool,
     onChange: React.PropTypes.func.isRequired
+  },
+
+  getDefaultProps: function(){
+    return {
+      value: []
+    }
   },
 
   render: function(){
@@ -35,9 +40,12 @@ var List = React.createClass({
   },
 
   renderSet: function(val, i) {
-    var {type, name} = this.props.schema;
+    var {type, name, widget, ...other} = this.props.schema;
+    var Widget = this.props.schema.widget;
+
+    // todo, render another formset?
     return (
-      <Field
+      <Widget
         type={type}
         name={name}
         onRemove={this.onRemove.bind(this, val, i)}
@@ -45,6 +53,7 @@ var List = React.createClass({
         key={i + name}
         onChange={this.onChange.bind(this, val, i)}
         value={val}
+        {...other}
       />
     );
   },

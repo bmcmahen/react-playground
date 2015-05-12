@@ -1,3 +1,4 @@
 module.exports = {
-  disabled: true
+  disabled: true,
+  children: 'Disabled Button'
 };

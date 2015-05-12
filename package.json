@@ -1,8 +1,21 @@
 {
   "dependencies": {
-    "react": "^0.13.1"
+    "classnames": "^2.1.1",
+    "dom-align": "^1.0.5",
+    "elemental": "0.0.6",
+    "lodash": "^3.8.0",
+    "rc-css-transition-group": "^1.0.2",
+    "rc-tooltip": "^1.0.0",
+    "rc-util": "^2.0.2",
+    "react": "^0.13.1",
+    "react-select": "^0.4.8",
+    "uid": "0.0.2"
   },
   "devDependencies": {
-    "cosmos-js": "^0.6.2"
+    "babel-core": "^5.2.17",
+    "babel-loader": "^5.0.0",
+    "cosmos-js": "^0.6.2",
+    "node-libs-browser": "^0.5.0",
+    "webpack": "^1.9.4"
   }
 }

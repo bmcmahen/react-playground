@@ -1,6 +1,4 @@
 var React = require('react');
-var Field = require('./Field.jsx');
-var List = require('./List.jsx');
 
 var Formset = React.createClass({
 
@@ -30,38 +28,22 @@ var Formset = React.createClass({
   },
 
   renderField: function(field){
-    var {name, type} = field;
-    if (type === 'list') {
-      if (!field.schema) {
-        throw new Error('A list field must have a schema');
-      }
-
-      return (
-        <List
-          key={name}
-          name={name}
-          error={this.props.errors[field.name]}
-          schema={field.schema}
-          addButton={field.addButton}
-          label={field.label}
-          value={this.props.value[field.name] || []}
-          onChange={this.onChange}
-        />
-      )
-    }
+    var {name, schema, label, ...other} = field;
+    var Widget = field.widget;
 
     return (
-      <Field
-        type={type}
+      <Widget
         name={name}
-        label={field.label}
-        placeholder={field.placeholder}
-        error={this.props.errors[name]}
         key={name}
+        error={this.props.errors[field.name]}
+        schema={schema}
+        label={label}
+        value={this.props.value[field.name]}
         onChange={this.onChange}
-        value={this.props.value[name] || ''}
+        {...other}
       />
     );
+
   },
 
   onChange: function(val, field){

@@ -1,0 +1,205 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-modal',
+1 verbose cli   '--save' ]
+2 info using npm@2.4.1
+3 info using node@v0.11.13
+4 warn package.json @ No repository field.
+5 warn package.json node-libs-browser@0.5.0 No repository field.
+6 silly cache add args [ 'react-modal', null ]
+7 verbose cache add spec react-modal
+8 silly cache add parsed spec { raw: 'react-modal',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'react-modal',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed react-modal@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'react-modal', range: '*', hasData: false }
+13 silly mapToRegistry name react-modal
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/react-modal
+17 verbose addNameRange registry:https://registry.npmjs.org/react-modal not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/react-modal
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 16:18:08
+21 verbose request id b3c654f73c56f6dc
+22 verbose etag "CVHE5P99FWIGE3ZYE0S6RRU7R"
+23 http request GET https://registry.npmjs.org/react-modal
+24 http 200 https://registry.npmjs.org/react-modal
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"2LAKVV7D6I4E7W01PVVASM268"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     'content-length': '19960',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Mon, 11 May 2015 22:18:08 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-ord1725-ORD',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1431382688.476022,VS0,VE190',
+25 silly get     vary: 'Accept' } ]
+26 verbose get saving react-modal to /Users/bmcmahen/.npm/registry.npmjs.org/react-modal/.cache.json
+27 silly addNameRange number 2 { name: 'react-modal', range: '*', hasData: true }
+28 silly addNameRange versions [ 'react-modal',
+28 silly addNameRange   [ '0.0.0',
+28 silly addNameRange     '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.7',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.2.0' ] ]
+29 verbose addNamed react-modal@0.2.0
+30 silly addNamed semver.valid 0.2.0
+31 silly addNamed semver.validRange 0.2.0
+32 silly mapToRegistry name react-modal
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/react-modal
+36 verbose addRemoteTarball https://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz',
+37 verbose addRemoteTarball   'f34f566c087ce32745ae410f0eed66775a713c5f' ]
+38 info retry fetch attempt 1 at 16:18:08
+39 info attempt registry request try #1 at 16:18:08
+40 http fetch GET https://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz
+41 http fetch 200 https://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz
+42 silly fetchAndShaCheck shasum f34f566c087ce32745ae410f0eed66775a713c5f
+43 verbose addTmpTarball /var/folders/00/hg9zmyr93ml5ltvwxfx2yt8m0000gn/T/npm-34475-415b81de/registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for react-modal@0.2.0
+45 silly cache afterAdd react-modal@0.2.0
+46 verbose afterAdd /Users/bmcmahen/.npm/react-modal/0.2.0/package/package.json not in flight; writing
+47 verbose afterAdd /Users/bmcmahen/.npm/react-modal/0.2.0/package/package.json written
+48 silly install resolved [ { name: 'react-modal',
+48 silly install resolved     version: '0.2.0',
+48 silly install resolved     description: 'Accessible modal dialog component for React.JS',
+48 silly install resolved     main: './lib/index',
+48 silly install resolved     repository: { type: 'git', url: 'https://github.com/rackt/react-modal.git' },
+48 silly install resolved     homepage: 'https://github.com/rackt/react-modal',
+48 silly install resolved     bugs: { url: 'https://github.com/rackt/react-modal/issues' },
+48 silly install resolved     directories: { example: 'examples' },
+48 silly install resolved     scripts:
+48 silly install resolved      { test: 'scripts/test --browsers Firefox --single-run',
+48 silly install resolved        start: 'scripts/dev-examples' },
+48 silly install resolved     authors: [ 'Ryan Florence' ],
+48 silly install resolved     license: 'MIT',
+48 silly install resolved     devDependencies:
+48 silly install resolved      { browserify: '4.2.3',
+48 silly install resolved        'browserify-shim': '3.6.0',
+48 silly install resolved        envify: '1.2.0',
+48 silly install resolved        expect: '0.1.1',
+48 silly install resolved        'jsx-loader': '0.11.2',
+48 silly install resolved        karma: '0.12.16',
+48 silly install resolved        'karma-browserify': '^0.2.1',
+48 silly install resolved        'karma-chrome-launcher': '0.1.4',
+48 silly install resolved        'karma-cli': '0.0.4',
+48 silly install resolved        'karma-firefox-launcher': '0.1.3',
+48 silly install resolved        'karma-mocha': '0.1.3',
+48 silly install resolved        mocha: '1.20.1',
+48 silly install resolved        react: '>=0.12.0',
+48 silly install resolved        reactify: '^0.14.0',
+48 silly install resolved        'rf-release': '0.3.1',
+48 silly install resolved        'uglify-js': '2.4.15',
+48 silly install resolved        'webpack-dev-server': '1.6.5' },
+48 silly install resolved     peerDependencies: { react: '>=0.12.0', classnames: '^1.2.0' },
+48 silly install resolved     tags: [ 'react', 'modal', 'dialog' ],
+48 silly install resolved     keywords: [ 'react', 'react-component', 'modal', 'dialog' ],
+48 silly install resolved     'browserify-shim': { react: 'global:React' },
+48 silly install resolved     gitHead: '48eed0077bebe2695e54857a1d9a9027f9e2f8d7',
+48 silly install resolved     _id: 'react-modal@0.2.0',
+48 silly install resolved     _shasum: 'f34f566c087ce32745ae410f0eed66775a713c5f',
+48 silly install resolved     _from: 'react-modal@*',
+48 silly install resolved     _npmVersion: '2.7.0',
+48 silly install resolved     _nodeVersion: '0.10.33',
+48 silly install resolved     _npmUser: { name: 'mzabriskie', email: 'mzabriskie@gmail.com' },
+48 silly install resolved     maintainers: [ [Object], [Object] ],
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: 'f34f566c087ce32745ae410f0eed66775a713c5f',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz' },
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/react-modal/-/react-modal-0.2.0.tgz' } ]
+49 info install react-modal@0.2.0 into /Users/bmcmahen/Development/react-starters/cosmos-example
+50 info installOne react-modal@0.2.0
+51 verbose installOne of react-modal to /Users/bmcmahen/Development/react-starters/cosmos-example not in flight; installing
+52 verbose lock using /Users/bmcmahen/.npm/_locks/react-modal-b5ac6f56e8730c07.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+53 silly install write writing react-modal 0.2.0 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+54 silly cache addNamed cb react-modal@0.2.0
+55 verbose unbuild node_modules/react-modal
+56 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+57 verbose tar unpack /Users/bmcmahen/.npm/react-modal/0.2.0/package.tgz
+58 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+59 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry webpack.config.js
+66 silly gunzTarPerm extractEntry .travis.yml
+67 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+68 silly gunzTarPerm extractEntry CHANGELOG.md
+69 silly gunzTarPerm extractEntry eslint.json
+70 silly gunzTarPerm extractEntry lib/index.js
+71 silly gunzTarPerm extractEntry lib/components/Modal.js
+72 silly gunzTarPerm extractEntry lib/components/ModalPortal.js
+73 silly gunzTarPerm extractEntry lib/helpers/ariaAppHider.js
+74 silly gunzTarPerm extractEntry lib/helpers/focusManager.js
+75 silly gunzTarPerm extractEntry lib/helpers/injectCSS.js
+76 silly gunzTarPerm extractEntry lib/helpers/scopeTab.js
+77 silly gunzTarPerm extractEntry lib/helpers/tabbable.js
+78 silly gunzTarPerm extractEntry scripts/build
+79 silly gunzTarPerm extractEntry scripts/dev-examples
+80 silly gunzTarPerm extractEntry scripts/preview-release
+81 silly gunzTarPerm extractEntry scripts/release
+82 silly gunzTarPerm extractEntry scripts/test
+83 silly gunzTarPerm extractEntry dist/react-modal.js
+84 silly gunzTarPerm extractEntry dist/react-modal.min.js
+85 info preinstall react-modal@0.2.0
+86 silly prepareForInstallMany adding classnames@^1.2.0 from react-modal peerDependencies
+87 silly install resolved []
+88 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+89 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+90 verbose linkStuff [ false,
+90 verbose linkStuff   false,
+90 verbose linkStuff   false,
+90 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules' ]
+91 info linkStuff react-modal@0.2.0
+92 verbose linkBins react-modal@0.2.0
+93 verbose linkMans react-modal@0.2.0
+94 verbose rebuildBundles react-modal@0.2.0
+95 info install react-modal@0.2.0
+96 info postinstall react-modal@0.2.0
+97 verbose already installed skipping classnames@^1.2.0 /Users/bmcmahen/Development/react-starters/cosmos-example
+98 silly install resolved []
+99 verbose unlock done using /Users/bmcmahen/.npm/_locks/react-modal-b5ac6f56e8730c07.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/react-modal
+100 verbose stack Error: The package classnames does not satisfy its siblings' peerDependencies requirements!
+100 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
+100 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+100 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+100 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+101 verbose cwd /Users/bmcmahen/Development/react-starters/cosmos-example
+102 error Darwin 14.3.0
+103 error argv "node" "/usr/local/bin/npm" "install" "react-modal" "--save"
+104 error node v0.11.13
+105 error npm  v2.4.1
+106 error code EPEERINVALID
+107 error peerinvalid The package classnames does not satisfy its siblings' peerDependencies requirements!
+107 error peerinvalid Peer react-modal@0.2.0 wants classnames@^1.2.0
+108 verbose exit [ 1, true ]

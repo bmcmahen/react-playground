@@ -13,6 +13,12 @@ var Field = React.createClass({
     onChange: PropTypes.func.isRequired
   },
 
+  getDefaultProps: function(){
+    return {
+      value: ''
+    }
+  },
+
   render: function(){
     return (
       <div className='Field'>

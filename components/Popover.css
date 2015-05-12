@@ -1,0 +1,6 @@
+.Popover {
+  position: fixed;
+  z-index: 2000;
+  transform: translateX(-50%);
+  display: inline-block;
+}

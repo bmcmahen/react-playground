@@ -1,0 +1,42 @@
+.Select {
+  position: relative;
+}
+
+.Select-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  transition: all 200ms ease;
+}
+
+.is-open > .Select-control {
+  background: white;
+}
+
+.Select-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 40px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Select-input input {
+  cursor: default;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.Select-input input.is-focused {
+  cursor: text;
+}

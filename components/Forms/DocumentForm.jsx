@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Formset from './Formset.jsx';
+import Input from './Field.jsx';
+import Select from './Select.jsx';
+import List from './List.jsx';
 
 function isRequired(v){
   return !!v;
@@ -8,32 +11,40 @@ function isRequired(v){
 const required = Object.freeze([
   {
     name: 'name',
-    type: 'text',
+    widget: Input,
     label: 'First Name *',
     validate: isRequired
   },
   {
     name: 'surname',
-    type: 'text',
+    widget: Input,
     label: 'Last Name *',
     validate: isRequired
+  },
+  {
+    name: 'type',
+    widget: Select,
+    options: [
+      { value: 'place', label: 'Place' },
+      { value: 'person', label: 'Person' }
+    ]
   }
 ]);
 
 const person = Object.freeze([
   {
     name: 'email',
-    type: 'text',
+    widget: Input,
     label: 'Email Address'
   },
   {
     name: 'tags',
     label: 'Tags',
-    type: 'list',
+    widget: List,
     addButton: true,
     schema : {
       name: 'tag',
-      type: 'text'
+      widget: Input
     }
   }
 ]);
