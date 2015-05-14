@@ -1,0 +1,10 @@
+.Timeline__year {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  margin: 0;
+  transition: all 0.3s ease-out;
+}

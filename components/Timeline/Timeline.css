@@ -1,0 +1,28 @@
+.Timeline {
+  position: relative;
+  margin: 0;
+  width: 700px;
+  opacity: 1;
+}
+
+.Timeline--loading {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Timeline__content {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Timeline__line {
+  background-color: #eee;
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}

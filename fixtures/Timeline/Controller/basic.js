@@ -1,5 +1,4 @@
 module.exports = {
-  yearSpan: 5,
   content: [
     {
       _id: 1,

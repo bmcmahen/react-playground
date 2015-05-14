@@ -1,5 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 
+require('./Map.css')
+
 class Map extends Component {
 
   static PropTypes = {
