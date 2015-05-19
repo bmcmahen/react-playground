@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react'
+import classnames from 'classnames'
 
 require('./Map.css')
 
@@ -6,7 +7,8 @@ class Map extends Component {
 
   static PropTypes = {
     dateRange: PropTypes.array.isRequired,
-    onYearSelected: PropTypes.func.isRequired
+    onYearSelected: PropTypes.func.isRequired,
+    activeYear: PropTypes.number
   }
 
   constructor(props){
@@ -23,8 +25,14 @@ class Map extends Component {
   }
 
   renderDate(num){
+
+    let classes = classnames({
+      'Map__item': true,
+      'Map__item--active': num == this.props.activeYear
+    })
+
     return (
-      <li key={num} className='Map__item'>
+      <li key={num} className={classes}>
         <a onClick={this.selectYear.bind(this, num)} href='#'>
           {num}
         </a>

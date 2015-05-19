@@ -43,6 +43,7 @@ class TimelineController extends Component {
         <input type='text' value={this.state.query} onChange={this.onFilter} />
         <Timeline
           yearSpan={5}
+          container='.preview'
           activeItem={this.state.activeItem}
           content={content}
           onItemSelected={this.onItemSelected}

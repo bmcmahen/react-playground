@@ -1,109 +1,123 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'scroll-to' ]
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'component-infinity',
+1 verbose cli   '--save' ]
 2 info using npm@2.4.1
 3 info using node@v0.11.13
 4 warn package.json @ No repository field.
 5 warn package.json node-libs-browser@0.5.0 No repository field.
-6 silly cache add args [ 'scroll-to', null ]
-7 verbose cache add spec scroll-to
-8 silly cache add parsed spec { raw: 'scroll-to',
+6 silly cache add args [ 'component-infinity', null ]
+7 verbose cache add spec component-infinity
+8 silly cache add parsed spec { raw: 'component-infinity',
 8 silly cache add   scope: null,
-8 silly cache add   name: 'scroll-to',
+8 silly cache add   name: 'component-infinity',
 8 silly cache add   rawSpec: '',
 8 silly cache add   spec: '*',
 8 silly cache add   type: 'range' }
-9 verbose addNamed scroll-to@*
+9 verbose addNamed component-infinity@*
 10 silly addNamed semver.valid null
 11 silly addNamed semver.validRange *
-12 silly addNameRange { name: 'scroll-to', range: '*', hasData: false }
-13 silly mapToRegistry name scroll-to
+12 silly addNameRange { name: 'component-infinity', range: '*', hasData: false }
+13 silly mapToRegistry name component-infinity
 14 silly mapToRegistry using default registry
 15 silly mapToRegistry registry https://registry.npmjs.org/
-16 silly mapToRegistry uri https://registry.npmjs.org/scroll-to
-17 verbose addNameRange registry:https://registry.npmjs.org/scroll-to not in flight; fetching
-18 verbose request uri https://registry.npmjs.org/scroll-to
+16 silly mapToRegistry uri https://registry.npmjs.org/component-infinity
+17 verbose addNameRange registry:https://registry.npmjs.org/component-infinity not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/component-infinity
 19 verbose request no auth needed
-20 info attempt registry request try #1 at 12:28:26
-21 verbose request id fc59200dda57963b
-22 http request GET https://registry.npmjs.org/scroll-to
-23 http 200 https://registry.npmjs.org/scroll-to
+20 info attempt registry request try #1 at 12:48:28
+21 verbose request id ea7d65d9d40b4588
+22 http request GET https://registry.npmjs.org/component-infinity
+23 http 200 https://registry.npmjs.org/component-infinity
 24 silly get cb [ 200,
 24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-24 silly get     etag: '"6ESJYD8NVKPHQYU9BLDLH55FL"',
+24 silly get     etag: '"AIOD1W8DC7CVVGK7OOE9N9T3T"',
 24 silly get     'content-type': 'application/json',
 24 silly get     'cache-control': 'max-age=60',
-24 silly get     'content-length': '3254',
+24 silly get     'content-length': '4216',
 24 silly get     'accept-ranges': 'bytes',
-24 silly get     date: 'Tue, 19 May 2015 18:28:26 GMT',
+24 silly get     date: 'Tue, 19 May 2015 18:48:28 GMT',
 24 silly get     via: '1.1 varnish',
 24 silly get     age: '0',
 24 silly get     connection: 'keep-alive',
-24 silly get     'x-served-by': 'cache-ord1730-ORD',
+24 silly get     'x-served-by': 'cache-dfw1825-DFW',
 24 silly get     'x-cache': 'MISS',
 24 silly get     'x-cache-hits': '0',
-24 silly get     'x-timer': 'S1432060106.731773,VS0,VE66',
+24 silly get     'x-timer': 'S1432061308.290848,VS0,VE81',
 24 silly get     vary: 'Accept' } ]
-25 verbose get saving scroll-to to /Users/bmcmahen/.npm/registry.npmjs.org/scroll-to/.cache.json
-26 silly addNameRange number 2 { name: 'scroll-to', range: '*', hasData: true }
-27 silly addNameRange versions [ 'scroll-to', [ '0.0.1', '0.0.2' ] ]
-28 verbose addNamed scroll-to@0.0.2
-29 silly addNamed semver.valid 0.0.2
-30 silly addNamed semver.validRange 0.0.2
-31 silly mapToRegistry name scroll-to
+25 verbose get saving component-infinity to /Users/bmcmahen/.npm/registry.npmjs.org/component-infinity/.cache.json
+26 silly addNameRange number 2 { name: 'component-infinity', range: '*', hasData: true }
+27 silly addNameRange versions [ 'component-infinity', [ '0.0.6' ] ]
+28 verbose addNamed component-infinity@0.0.6
+29 silly addNamed semver.valid 0.0.6
+30 silly addNamed semver.validRange 0.0.6
+31 silly mapToRegistry name component-infinity
 32 silly mapToRegistry using default registry
 33 silly mapToRegistry registry https://registry.npmjs.org/
-34 silly mapToRegistry uri https://registry.npmjs.org/scroll-to
-35 verbose addRemoteTarball https://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz not in flight; adding
-36 verbose addRemoteTarball [ 'https://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz',
-36 verbose addRemoteTarball   '936d398a9133660a2492145c2c0081dfcb0728f3' ]
-37 info retry fetch attempt 1 at 12:28:26
-38 info attempt registry request try #1 at 12:28:26
-39 http fetch GET https://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz
-40 http fetch 200 https://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz
-41 silly fetchAndShaCheck shasum 936d398a9133660a2492145c2c0081dfcb0728f3
-42 verbose addTmpTarball /var/folders/00/hg9zmyr93ml5ltvwxfx2yt8m0000gn/T/npm-60679-9a57e274/registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz not in flight; adding
-43 verbose addTmpTarball already have metadata; skipping unpack for scroll-to@0.0.2
-44 silly cache afterAdd scroll-to@0.0.2
-45 verbose afterAdd /Users/bmcmahen/.npm/scroll-to/0.0.2/package/package.json not in flight; writing
-46 verbose afterAdd /Users/bmcmahen/.npm/scroll-to/0.0.2/package/package.json written
-47 silly install resolved [ { name: 'scroll-to',
-47 silly install resolved     description: 'Smooth window scroll to position with requestAnimationFrame',
-47 silly install resolved     version: '0.0.2',
-47 silly install resolved     keywords: [ 'scroll', 'animate', 'scroll-to' ],
-47 silly install resolved     dependencies: { 'component-raf': '1.2.0', 'component-tween': '1.2.0' },
-47 silly install resolved     browser: { raf: 'component-raf', tween: 'component-tween' },
-47 silly install resolved     license: 'MIT',
+34 silly mapToRegistry uri https://registry.npmjs.org/component-infinity
+35 verbose addRemoteTarball https://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz',
+36 verbose addRemoteTarball   '19116429ba95b5d00afa76ae9ec4f89309ce34f9' ]
+37 info retry fetch attempt 1 at 12:48:28
+38 info attempt registry request try #1 at 12:48:28
+39 http fetch GET https://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz
+40 http fetch 200 https://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz
+41 silly fetchAndShaCheck shasum 19116429ba95b5d00afa76ae9ec4f89309ce34f9
+42 verbose addTmpTarball /var/folders/00/hg9zmyr93ml5ltvwxfx2yt8m0000gn/T/npm-60735-f286afa9/registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for component-infinity@0.0.6
+44 silly cache afterAdd component-infinity@0.0.6
+45 verbose afterAdd /Users/bmcmahen/.npm/component-infinity/0.0.6/package/package.json not in flight; writing
+46 verbose afterAdd /Users/bmcmahen/.npm/component-infinity/0.0.6/package/package.json written
+47 silly install resolved [ { name: 'component-infinity',
+47 silly install resolved     version: '0.0.6',
+47 silly install resolved     description: 'infinite scrolling with loading and unloading',
 47 silly install resolved     main: 'index.js',
+47 silly install resolved     keywords: [ 'scrolling', 'loading', 'unload' ],
+47 silly install resolved     dependencies:
+47 silly install resolved      { debounce: '*',
+47 silly install resolved        'component-emitter': '*',
+47 silly install resolved        'component-event': '*',
+47 silly install resolved        'component-query': '*',
+47 silly install resolved        throttleit: '*' },
+47 silly install resolved     browser:
+47 silly install resolved      { emitter: 'component-emitter',
+47 silly install resolved        event: 'component-event',
+47 silly install resolved        query: 'component-query',
+47 silly install resolved        throttle: 'throttleit' },
+47 silly install resolved     author: { name: 'Matthew Mueller' },
+47 silly install resolved     license: 'MIT',
 47 silly install resolved     component: { scripts: [Object] },
 47 silly install resolved     repository:
 47 silly install resolved      { type: 'git',
-47 silly install resolved        url: 'https://github.com/component/scroll-to.git' },
-47 silly install resolved     gitHead: 'd7bf3a353f56fe059c76696cc0216a09b111c894',
-47 silly install resolved     bugs: { url: 'https://github.com/component/scroll-to/issues' },
-47 silly install resolved     homepage: 'https://github.com/component/scroll-to',
-47 silly install resolved     _id: 'scroll-to@0.0.2',
+47 silly install resolved        url: 'https://github.com/component/infinity.git' },
+47 silly install resolved     gitHead: 'eaacb56186b11458a1fdfe9983e9267bd7c5a500',
+47 silly install resolved     bugs: { url: 'https://github.com/component/infinity/issues' },
+47 silly install resolved     homepage: 'https://github.com/component/infinity',
+47 silly install resolved     _id: 'component-infinity@0.0.6',
 47 silly install resolved     scripts: {},
-47 silly install resolved     _shasum: '936d398a9133660a2492145c2c0081dfcb0728f3',
-47 silly install resolved     _from: 'scroll-to@*',
+47 silly install resolved     _shasum: '19116429ba95b5d00afa76ae9ec4f89309ce34f9',
+47 silly install resolved     _from: 'component-infinity@*',
 47 silly install resolved     _npmVersion: '1.4.28',
 47 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
-47 silly install resolved     maintainers: [ [Object], [Object] ],
+47 silly install resolved     maintainers: [ [Object] ],
 47 silly install resolved     dist:
-47 silly install resolved      { shasum: '936d398a9133660a2492145c2c0081dfcb0728f3',
-47 silly install resolved        tarball: 'http://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz' },
+47 silly install resolved      { shasum: '19116429ba95b5d00afa76ae9ec4f89309ce34f9',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz' },
 47 silly install resolved     directories: {},
-47 silly install resolved     _resolved: 'https://registry.npmjs.org/scroll-to/-/scroll-to-0.0.2.tgz' } ]
-48 info install scroll-to@0.0.2 into /Users/bmcmahen/Development/react-starters/cosmos-example
-49 info installOne scroll-to@0.0.2
-50 verbose installOne of scroll-to to /Users/bmcmahen/Development/react-starters/cosmos-example not in flight; installing
-51 verbose lock using /Users/bmcmahen/.npm/_locks/scroll-to-61a77cf6d471d537.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-52 silly install write writing scroll-to 0.0.2 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-53 silly cache addNamed cb scroll-to@0.0.2
-54 verbose unbuild node_modules/scroll-to
-55 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-56 verbose tar unpack /Users/bmcmahen/.npm/scroll-to/0.0.2/package.tgz
-57 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-58 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/component-infinity/-/component-infinity-0.0.6.tgz' } ]
+48 info install component-infinity@0.0.6 into /Users/bmcmahen/Development/react-starters/cosmos-example
+49 info installOne component-infinity@0.0.6
+50 verbose installOne of component-infinity to /Users/bmcmahen/Development/react-starters/cosmos-example not in flight; installing
+51 verbose lock using /Users/bmcmahen/.npm/_locks/component-infinity-f7014dd655a79abc.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+52 silly install write writing component-infinity 0.0.6 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+53 silly cache addNamed cb component-infinity@0.0.6
+54 verbose unbuild node_modules/component-infinity
+55 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+56 verbose tar unpack /Users/bmcmahen/.npm/component-infinity/0.0.6/package.tgz
+57 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+58 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
 59 silly gunzTarPerm modes [ '755', '644' ]
 60 silly gunzTarPerm extractEntry package.json
 61 silly gunzTarPerm extractEntry .npmignore
@@ -112,184 +126,815 @@
 64 silly gunzTarPerm extractEntry Makefile
 65 silly gunzTarPerm extractEntry Readme.md
 66 silly gunzTarPerm extractEntry component.json
-67 silly gunzTarPerm extractEntry example.html
-68 info preinstall scroll-to@0.0.2
-69 silly prepareForInstallMany adding component-raf@1.2.0 from scroll-to dependencies
-70 silly cache add args [ 'component-raf@1.2.0', null ]
-71 verbose cache add spec component-raf@1.2.0
-72 silly cache add parsed spec { raw: 'component-raf@1.2.0',
-72 silly cache add   scope: null,
-72 silly cache add   name: 'component-raf',
-72 silly cache add   rawSpec: '1.2.0',
-72 silly cache add   spec: '1.2.0',
-72 silly cache add   type: 'version' }
-73 verbose addNamed component-raf@1.2.0
-74 silly addNamed semver.valid 1.2.0
-75 silly addNamed semver.validRange 1.2.0
-76 silly mapToRegistry name component-raf
-77 silly mapToRegistry using default registry
-78 silly mapToRegistry registry https://registry.npmjs.org/
-79 silly mapToRegistry uri https://registry.npmjs.org/component-raf
-80 verbose addNameVersion registry:https://registry.npmjs.org/component-raf not in flight; fetching
-81 verbose request uri https://registry.npmjs.org/component-raf
-82 verbose request no auth needed
-83 info attempt registry request try #1 at 12:28:27
-84 verbose etag "ERGJWGFSM6IJE9ARRX4RHU4EG"
-85 http request GET https://registry.npmjs.org/component-raf
-86 http 200 https://registry.npmjs.org/component-raf
-87 silly get cb [ 200,
-87 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-87 silly get     etag: '"EHWWJSN8SU7SBMJ99SP11QR7N"',
-87 silly get     'content-type': 'application/json',
-87 silly get     'cache-control': 'max-age=60',
-87 silly get     'content-length': '6303',
-87 silly get     'accept-ranges': 'bytes',
-87 silly get     date: 'Tue, 19 May 2015 18:28:27 GMT',
-87 silly get     via: '1.1 varnish',
-87 silly get     age: '0',
-87 silly get     connection: 'keep-alive',
-87 silly get     'x-served-by': 'cache-ord1730-ORD',
-87 silly get     'x-cache': 'MISS',
-87 silly get     'x-cache-hits': '0',
-87 silly get     'x-timer': 'S1432060107.060063,VS0,VE71',
-87 silly get     vary: 'Accept' } ]
-88 verbose get saving component-raf to /Users/bmcmahen/.npm/registry.npmjs.org/component-raf/.cache.json
-89 silly mapToRegistry name component-raf
-90 silly mapToRegistry using default registry
-91 silly mapToRegistry registry https://registry.npmjs.org/
-92 silly mapToRegistry uri https://registry.npmjs.org/component-raf
-93 verbose addRemoteTarball https://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz not in flight; adding
-94 verbose addRemoteTarball [ 'https://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz',
-94 verbose addRemoteTarball   'b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa' ]
-95 info retry fetch attempt 1 at 12:28:27
-96 info attempt registry request try #1 at 12:28:27
-97 http fetch GET https://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz
-98 http fetch 200 https://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz
-99 silly fetchAndShaCheck shasum b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa
-100 verbose addTmpTarball /var/folders/00/hg9zmyr93ml5ltvwxfx2yt8m0000gn/T/npm-60679-9a57e274/registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz not in flight; adding
-101 verbose addTmpTarball already have metadata; skipping unpack for component-raf@1.2.0
-102 silly cache afterAdd component-raf@1.2.0
-103 verbose afterAdd /Users/bmcmahen/.npm/component-raf/1.2.0/package/package.json not in flight; writing
-104 verbose afterAdd /Users/bmcmahen/.npm/component-raf/1.2.0/package/package.json written
-105 silly install resolved [ { name: 'component-raf',
-105 silly install resolved     description: 'request animation frame',
-105 silly install resolved     version: '1.2.0',
-105 silly install resolved     keywords: [ 'animate', 'requestAnimationFrame', 'performance' ],
-105 silly install resolved     dependencies: {},
-105 silly install resolved     component: { scripts: [Object] },
-105 silly install resolved     main: 'index.js',
-105 silly install resolved     repository: { type: 'git', url: 'https://github.com/component/raf.git' },
-105 silly install resolved     gitHead: '248c5fbdc10d35caf0775ed8f1c283e7dab363b4',
-105 silly install resolved     bugs: { url: 'https://github.com/component/raf/issues' },
-105 silly install resolved     homepage: 'https://github.com/component/raf',
-105 silly install resolved     _id: 'component-raf@1.2.0',
-105 silly install resolved     scripts: {},
-105 silly install resolved     _shasum: 'b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa',
-105 silly install resolved     _from: 'component-raf@1.2.0',
-105 silly install resolved     _npmVersion: '1.4.26',
-105 silly install resolved     _npmUser: { name: 'jongleberry', email: 'jonathanrichardong@gmail.com' },
-105 silly install resolved     maintainers:
-105 silly install resolved      [ [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object],
-105 silly install resolved        [Object] ],
-105 silly install resolved     dist:
-105 silly install resolved      { shasum: 'b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa',
-105 silly install resolved        tarball: 'http://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz' },
-105 silly install resolved     directories: {},
-105 silly install resolved     _resolved: 'https://registry.npmjs.org/component-raf/-/component-raf-1.2.0.tgz' } ]
-106 info install component-raf@1.2.0 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-107 info installOne component-raf@1.2.0
-108 verbose installOne of component-raf to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to not in flight; installing
-109 verbose lock using /Users/bmcmahen/.npm/_locks/component-raf-141e5fd7b3d42546.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-110 silly install write writing component-raf 1.2.0 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-111 silly cache addNamed cb component-raf@1.2.0
-112 verbose unbuild node_modules/scroll-to/node_modules/component-raf
-113 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-114 verbose tar unpack /Users/bmcmahen/.npm/component-raf/1.2.0/package.tgz
-115 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-116 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-117 silly gunzTarPerm modes [ '755', '644' ]
-118 silly gunzTarPerm extractEntry package.json
-119 silly gunzTarPerm extractEntry .npmignore
-120 silly gunzTarPerm extractEntry index.js
-121 silly gunzTarPerm extractEntry History.md
-122 silly gunzTarPerm extractEntry Makefile
-123 silly gunzTarPerm extractEntry Readme.md
-124 silly gunzTarPerm extractEntry component.json
-125 silly gunzTarPerm extractEntry example.html
-126 info preinstall component-raf@1.2.0
-127 silly install resolved []
-128 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-129 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-130 verbose linkStuff [ false,
-130 verbose linkStuff   false,
-130 verbose linkStuff   false,
-130 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules' ]
-131 info linkStuff component-raf@1.2.0
-132 verbose linkBins component-raf@1.2.0
-133 verbose linkMans component-raf@1.2.0
-134 verbose rebuildBundles component-raf@1.2.0
-135 info install component-raf@1.2.0
-136 info postinstall component-raf@1.2.0
-137 verbose unlock done using /Users/bmcmahen/.npm/_locks/component-raf-141e5fd7b3d42546.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to/node_modules/component-raf
-138 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-139 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-140 verbose linkStuff [ false,
-140 verbose linkStuff   false,
-140 verbose linkStuff   false,
-140 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules' ]
-141 info linkStuff scroll-to@0.0.2
-142 verbose linkBins scroll-to@0.0.2
-143 verbose linkMans scroll-to@0.0.2
-144 verbose rebuildBundles scroll-to@0.0.2
-145 verbose rebuildBundles [ 'component-raf' ]
-146 info install scroll-to@0.0.2
-147 info postinstall scroll-to@0.0.2
-148 verbose unlock done using /Users/bmcmahen/.npm/_locks/scroll-to-61a77cf6d471d537.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/scroll-to
-149 verbose stack Error: The package classnames does not satisfy its siblings' peerDependencies requirements!
-149 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
-149 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
-149 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
-149 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-149 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-149 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-149 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-149 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-149 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-149 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-150 verbose cwd /Users/bmcmahen/Development/react-starters/cosmos-example
-151 error Darwin 14.3.0
-152 error argv "node" "/usr/local/bin/npm" "install" "scroll-to"
-153 error node v0.11.13
-154 error npm  v2.4.1
-155 error code EPEERINVALID
-156 error peerinvalid The package classnames does not satisfy its siblings' peerDependencies requirements!
-156 error peerinvalid Peer react-modal@0.2.0 wants classnames@^1.2.0
-157 verbose exit [ 1, true ]
+67 silly gunzTarPerm extractEntry examples/element.html
+68 silly gunzTarPerm extractEntry examples/horizontal.html
+69 silly gunzTarPerm extractEntry examples/pinterest.html
+70 silly gunzTarPerm extractEntry examples/window.html
+71 info preinstall component-infinity@0.0.6
+72 silly prepareForInstallMany adding debounce@* from component-infinity dependencies
+73 silly prepareForInstallMany adding component-emitter@* from component-infinity dependencies
+74 silly prepareForInstallMany adding component-event@* from component-infinity dependencies
+75 silly prepareForInstallMany adding component-query@* from component-infinity dependencies
+76 silly prepareForInstallMany adding throttleit@* from component-infinity dependencies
+77 silly cache add args [ 'debounce@*', null ]
+78 verbose cache add spec debounce@*
+79 silly cache add args [ 'component-emitter@*', null ]
+80 verbose cache add spec component-emitter@*
+81 silly cache add parsed spec { raw: 'debounce@*',
+81 silly cache add   scope: null,
+81 silly cache add   name: 'debounce',
+81 silly cache add   rawSpec: '*',
+81 silly cache add   spec: '*',
+81 silly cache add   type: 'range' }
+82 verbose addNamed debounce@*
+83 silly addNamed semver.valid null
+84 silly addNamed semver.validRange *
+85 silly addNameRange { name: 'debounce', range: '*', hasData: false }
+86 silly mapToRegistry name debounce
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry uri https://registry.npmjs.org/debounce
+90 verbose addNameRange registry:https://registry.npmjs.org/debounce not in flight; fetching
+91 silly cache add parsed spec { raw: 'component-emitter@*',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'component-emitter',
+91 silly cache add   rawSpec: '*',
+91 silly cache add   spec: '*',
+91 silly cache add   type: 'range' }
+92 verbose addNamed component-emitter@*
+93 silly addNamed semver.valid null
+94 silly addNamed semver.validRange *
+95 silly addNameRange { name: 'component-emitter', range: '*', hasData: false }
+96 silly mapToRegistry name component-emitter
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry uri https://registry.npmjs.org/component-emitter
+100 verbose addNameRange registry:https://registry.npmjs.org/component-emitter not in flight; fetching
+101 silly cache add args [ 'component-event@*', null ]
+102 verbose cache add spec component-event@*
+103 silly cache add parsed spec { raw: 'component-event@*',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'component-event',
+103 silly cache add   rawSpec: '*',
+103 silly cache add   spec: '*',
+103 silly cache add   type: 'range' }
+104 verbose addNamed component-event@*
+105 silly addNamed semver.valid null
+106 silly addNamed semver.validRange *
+107 silly addNameRange { name: 'component-event', range: '*', hasData: false }
+108 silly mapToRegistry name component-event
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/component-event
+112 verbose addNameRange registry:https://registry.npmjs.org/component-event not in flight; fetching
+113 silly cache add args [ 'component-query@*', null ]
+114 verbose cache add spec component-query@*
+115 silly cache add parsed spec { raw: 'component-query@*',
+115 silly cache add   scope: null,
+115 silly cache add   name: 'component-query',
+115 silly cache add   rawSpec: '*',
+115 silly cache add   spec: '*',
+115 silly cache add   type: 'range' }
+116 verbose addNamed component-query@*
+117 silly addNamed semver.valid null
+118 silly addNamed semver.validRange *
+119 silly addNameRange { name: 'component-query', range: '*', hasData: false }
+120 silly mapToRegistry name component-query
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry uri https://registry.npmjs.org/component-query
+124 verbose addNameRange registry:https://registry.npmjs.org/component-query not in flight; fetching
+125 silly cache add args [ 'throttleit@*', null ]
+126 verbose cache add spec throttleit@*
+127 silly cache add parsed spec { raw: 'throttleit@*',
+127 silly cache add   scope: null,
+127 silly cache add   name: 'throttleit',
+127 silly cache add   rawSpec: '*',
+127 silly cache add   spec: '*',
+127 silly cache add   type: 'range' }
+128 verbose addNamed throttleit@*
+129 silly addNamed semver.valid null
+130 silly addNamed semver.validRange *
+131 silly addNameRange { name: 'throttleit', range: '*', hasData: false }
+132 silly mapToRegistry name throttleit
+133 silly mapToRegistry using default registry
+134 silly mapToRegistry registry https://registry.npmjs.org/
+135 silly mapToRegistry uri https://registry.npmjs.org/throttleit
+136 verbose addNameRange registry:https://registry.npmjs.org/throttleit not in flight; fetching
+137 verbose request uri https://registry.npmjs.org/debounce
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 12:48:28
+140 verbose etag "9E0HN7C2R1DBDCLF8BQ4DOZYY"
+141 http request GET https://registry.npmjs.org/debounce
+142 verbose request uri https://registry.npmjs.org/component-event
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 12:48:28
+145 verbose etag "B56CY7EYDQ67EHS3KD36AJO14"
+146 http request GET https://registry.npmjs.org/component-event
+147 verbose request uri https://registry.npmjs.org/component-query
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 12:48:28
+150 verbose etag "BSWNA61XWUQ4LPR6H8E9P94WN"
+151 http request GET https://registry.npmjs.org/component-query
+152 verbose request uri https://registry.npmjs.org/component-emitter
+153 verbose request no auth needed
+154 info attempt registry request try #1 at 12:48:28
+155 verbose etag "8HDS1BEMWPCOUI7JBFOOTLA4H"
+156 http request GET https://registry.npmjs.org/component-emitter
+157 verbose request uri https://registry.npmjs.org/throttleit
+158 verbose request no auth needed
+159 info attempt registry request try #1 at 12:48:28
+160 verbose etag "BR7A70SR40W7HOMVMGHRUGJ90"
+161 http request GET https://registry.npmjs.org/throttleit
+162 http 200 https://registry.npmjs.org/debounce
+163 silly get cb [ 200,
+163 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+163 silly get     etag: '"904KRDO6R3VVXH24EXXTY53ZQ"',
+163 silly get     'content-type': 'application/json',
+163 silly get     'cache-control': 'max-age=60',
+163 silly get     'content-length': '6961',
+163 silly get     'accept-ranges': 'bytes',
+163 silly get     date: 'Tue, 19 May 2015 18:48:28 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     age: '0',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-dfw1825-DFW',
+163 silly get     'x-cache': 'MISS',
+163 silly get     'x-cache-hits': '0',
+163 silly get     'x-timer': 'S1432061308.849987,VS0,VE62',
+163 silly get     vary: 'Accept' } ]
+164 verbose get saving debounce to /Users/bmcmahen/.npm/registry.npmjs.org/debounce/.cache.json
+165 silly addNameRange number 2 { name: 'debounce', range: '*', hasData: true }
+166 silly addNameRange versions [ 'debounce', [ '0.0.2', '0.0.3', '1.0.0' ] ]
+167 verbose addNamed debounce@1.0.0
+168 silly addNamed semver.valid 1.0.0
+169 silly addNamed semver.validRange 1.0.0
+170 silly cache afterAdd debounce@1.0.0
+171 verbose afterAdd /Users/bmcmahen/.npm/debounce/1.0.0/package/package.json not in flight; writing
+172 verbose afterAdd /Users/bmcmahen/.npm/debounce/1.0.0/package/package.json written
+173 http 200 https://registry.npmjs.org/component-event
+174 silly get cb [ 200,
+174 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+174 silly get     etag: '"7L7MXNPQ2AK7QNXG7VL7N4CZR"',
+174 silly get     'content-type': 'application/json',
+174 silly get     'cache-control': 'max-age=60',
+174 silly get     'content-length': '5500',
+174 silly get     'accept-ranges': 'bytes',
+174 silly get     date: 'Tue, 19 May 2015 18:48:29 GMT',
+174 silly get     via: '1.1 varnish',
+174 silly get     age: '0',
+174 silly get     connection: 'keep-alive',
+174 silly get     'x-served-by': 'cache-dfw1820-DFW',
+174 silly get     'x-cache': 'HIT',
+174 silly get     'x-cache-hits': '1',
+174 silly get     'x-timer': 'S1432061309.094741,VS0,VE47',
+174 silly get     vary: 'Accept' } ]
+175 verbose get saving component-event to /Users/bmcmahen/.npm/registry.npmjs.org/component-event/.cache.json
+176 http 200 https://registry.npmjs.org/throttleit
+177 silly get cb [ 200,
+177 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+177 silly get     etag: '"UMK4VPH5LL1TEYXMN61ZEAGL"',
+177 silly get     'content-type': 'application/json',
+177 silly get     'cache-control': 'max-age=60',
+177 silly get     'content-length': '6044',
+177 silly get     'accept-ranges': 'bytes',
+177 silly get     date: 'Tue, 19 May 2015 18:48:29 GMT',
+177 silly get     via: '1.1 varnish',
+177 silly get     age: '55',
+177 silly get     connection: 'keep-alive',
+177 silly get     'x-served-by': 'cache-dfw1823-DFW',
+177 silly get     'x-cache': 'HIT',
+177 silly get     'x-cache-hits': '3',
+177 silly get     'x-timer': 'S1432061309.136646,VS0,VE0',
+177 silly get     vary: 'Accept' } ]
+178 verbose get saving throttleit to /Users/bmcmahen/.npm/registry.npmjs.org/throttleit/.cache.json
+179 silly addNameRange number 2 { name: 'component-event', range: '*', hasData: true }
+180 silly addNameRange versions [ 'component-event', [ '0.1.3', '0.1.4' ] ]
+181 verbose addNamed component-event@0.1.4
+182 silly addNamed semver.valid 0.1.4
+183 silly addNamed semver.validRange 0.1.4
+184 silly addNameRange number 2 { name: 'throttleit', range: '*', hasData: true }
+185 silly addNameRange versions [ 'throttleit', [ '0.0.1', '0.0.2', '1.0.0' ] ]
+186 verbose addNamed throttleit@1.0.0
+187 silly addNamed semver.valid 1.0.0
+188 silly addNamed semver.validRange 1.0.0
+189 silly mapToRegistry name throttleit
+190 silly mapToRegistry using default registry
+191 silly mapToRegistry registry https://registry.npmjs.org/
+192 silly mapToRegistry uri https://registry.npmjs.org/throttleit
+193 verbose addRemoteTarball https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz not in flight; adding
+194 verbose addRemoteTarball [ 'https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz',
+194 verbose addRemoteTarball   '9e785836daf46743145a5984b6268d828528ac6c' ]
+195 silly cache afterAdd component-event@0.1.4
+196 verbose afterAdd /Users/bmcmahen/.npm/component-event/0.1.4/package/package.json not in flight; writing
+197 http 304 https://registry.npmjs.org/component-emitter
+198 silly get cb [ 304,
+198 silly get   { date: 'Tue, 19 May 2015 18:48:29 GMT',
+198 silly get     via: '1.1 varnish',
+198 silly get     'cache-control': 'max-age=60',
+198 silly get     etag: '"8HDS1BEMWPCOUI7JBFOOTLA4H"',
+198 silly get     age: '12',
+198 silly get     connection: 'keep-alive',
+198 silly get     'x-served-by': 'cache-dfw1827-DFW',
+198 silly get     'x-cache': 'HIT',
+198 silly get     'x-cache-hits': '1',
+198 silly get     'x-timer': 'S1432061309.165004,VS0,VE0',
+198 silly get     vary: 'Accept' } ]
+199 verbose etag https://registry.npmjs.org/component-emitter from cache
+200 verbose get saving component-emitter to /Users/bmcmahen/.npm/registry.npmjs.org/component-emitter/.cache.json
+201 info retry fetch attempt 1 at 12:48:29
+202 info attempt registry request try #1 at 12:48:29
+203 http fetch GET https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz
+204 verbose afterAdd /Users/bmcmahen/.npm/component-event/0.1.4/package/package.json written
+205 silly addNameRange number 2 { name: 'component-emitter', range: '*', hasData: true }
+206 silly addNameRange versions [ 'component-emitter', [ '1.1.2', '1.1.3', '1.2.0' ] ]
+207 verbose addNamed component-emitter@1.2.0
+208 silly addNamed semver.valid 1.2.0
+209 silly addNamed semver.validRange 1.2.0
+210 silly cache afterAdd component-emitter@1.2.0
+211 verbose afterAdd /Users/bmcmahen/.npm/component-emitter/1.2.0/package/package.json not in flight; writing
+212 verbose afterAdd /Users/bmcmahen/.npm/component-emitter/1.2.0/package/package.json written
+213 http 200 https://registry.npmjs.org/component-query
+214 silly get cb [ 200,
+214 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+214 silly get     etag: '"4GWH5B81KAPAL40N4LCH4WDKX"',
+214 silly get     'content-type': 'application/json',
+214 silly get     'cache-control': 'max-age=60',
+214 silly get     'content-length': '4011',
+214 silly get     'accept-ranges': 'bytes',
+214 silly get     date: 'Tue, 19 May 2015 18:48:29 GMT',
+214 silly get     via: '1.1 varnish',
+214 silly get     age: '0',
+214 silly get     connection: 'keep-alive',
+214 silly get     'x-served-by': 'cache-dfw1821-DFW',
+214 silly get     'x-cache': 'HIT',
+214 silly get     'x-cache-hits': '1',
+214 silly get     'x-timer': 'S1432061309.174619,VS0,VE63',
+214 silly get     vary: 'Accept' } ]
+215 verbose get saving component-query to /Users/bmcmahen/.npm/registry.npmjs.org/component-query/.cache.json
+216 silly addNameRange number 2 { name: 'component-query', range: '*', hasData: true }
+217 silly addNameRange versions [ 'component-query', [ '0.0.3' ] ]
+218 verbose addNamed component-query@0.0.3
+219 silly addNamed semver.valid 0.0.3
+220 silly addNamed semver.validRange 0.0.3
+221 silly cache afterAdd component-query@0.0.3
+222 verbose afterAdd /Users/bmcmahen/.npm/component-query/0.0.3/package/package.json not in flight; writing
+223 verbose afterAdd /Users/bmcmahen/.npm/component-query/0.0.3/package/package.json written
+224 http fetch 200 https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz
+225 silly fetchAndShaCheck shasum 9e785836daf46743145a5984b6268d828528ac6c
+226 verbose addTmpTarball /var/folders/00/hg9zmyr93ml5ltvwxfx2yt8m0000gn/T/npm-60735-f286afa9/registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz not in flight; adding
+227 verbose addTmpTarball already have metadata; skipping unpack for throttleit@1.0.0
+228 silly cache afterAdd throttleit@1.0.0
+229 verbose afterAdd /Users/bmcmahen/.npm/throttleit/1.0.0/package/package.json not in flight; writing
+230 verbose afterAdd /Users/bmcmahen/.npm/throttleit/1.0.0/package/package.json written
+231 silly install resolved [ { name: 'debounce',
+231 silly install resolved     description: 'Creates and returns a new debounced version of the passed function that will postpone its execution until after wait milliseconds have elapsed since the last time it was invoked',
+231 silly install resolved     version: '1.0.0',
+231 silly install resolved     repository: { type: 'git', url: 'git://github.com/component/debounce' },
+231 silly install resolved     main: 'index.js',
+231 silly install resolved     license: 'MIT',
+231 silly install resolved     keywords: [ 'function', 'throttle', 'invoke' ],
+231 silly install resolved     dependencies: { 'date-now': '1.0.1' },
+231 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+231 silly install resolved     component: { scripts: [Object] },
+231 silly install resolved     gitHead: '0b58e834ede3bead70c09af22375e1d62671d7b9',
+231 silly install resolved     bugs: { url: 'https://github.com/component/debounce/issues' },
+231 silly install resolved     homepage: 'https://github.com/component/debounce',
+231 silly install resolved     _id: 'debounce@1.0.0',
+231 silly install resolved     scripts: {},
+231 silly install resolved     _shasum: '0948af513d2e4ce407916f8506a423d3f9cf72d8',
+231 silly install resolved     _from: 'debounce@*',
+231 silly install resolved     _npmVersion: '1.4.14',
+231 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+231 silly install resolved     maintainers:
+231 silly install resolved      [ [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object] ],
+231 silly install resolved     dist:
+231 silly install resolved      { shasum: '0948af513d2e4ce407916f8506a423d3f9cf72d8',
+231 silly install resolved        tarball: 'http://registry.npmjs.org/debounce/-/debounce-1.0.0.tgz' },
+231 silly install resolved     directories: {},
+231 silly install resolved     _resolved: 'https://registry.npmjs.org/debounce/-/debounce-1.0.0.tgz',
+231 silly install resolved     readme: 'ERROR: No README data found!' },
+231 silly install resolved   { name: 'component-event',
+231 silly install resolved     description: 'Event binding component',
+231 silly install resolved     version: '0.1.4',
+231 silly install resolved     keywords: [ 'browser', 'event', 'events' ],
+231 silly install resolved     component: { scripts: [Object] },
+231 silly install resolved     repository: { type: 'git', url: 'https://github.com/component/event.git' },
+231 silly install resolved     bugs: { url: 'https://github.com/component/event/issues' },
+231 silly install resolved     homepage: 'https://github.com/component/event',
+231 silly install resolved     _id: 'component-event@0.1.4',
+231 silly install resolved     _shasum: '3de78fc28782381787e24bf2a7c536bf0142c9b4',
+231 silly install resolved     _from: 'component-event@*',
+231 silly install resolved     _npmVersion: '1.4.9',
+231 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+231 silly install resolved     maintainers:
+231 silly install resolved      [ [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object] ],
+231 silly install resolved     dist:
+231 silly install resolved      { shasum: '3de78fc28782381787e24bf2a7c536bf0142c9b4',
+231 silly install resolved        tarball: 'http://registry.npmjs.org/component-event/-/component-event-0.1.4.tgz' },
+231 silly install resolved     directories: {},
+231 silly install resolved     _resolved: 'https://registry.npmjs.org/component-event/-/component-event-0.1.4.tgz',
+231 silly install resolved     readme: 'ERROR: No README data found!' },
+231 silly install resolved   { name: 'component-emitter',
+231 silly install resolved     description: 'Event emitter',
+231 silly install resolved     version: '1.2.0',
+231 silly install resolved     license: 'MIT',
+231 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+231 silly install resolved     component: { scripts: [Object] },
+231 silly install resolved     main: 'index.js',
+231 silly install resolved     repository: { type: 'git', url: 'https://github.com/component/emitter.git' },
+231 silly install resolved     scripts: { test: 'make test' },
+231 silly install resolved     files: [ 'index.js', 'LICENSE' ],
+231 silly install resolved     gitHead: '4d18307a2cdd2cec16d1fadf9e04f02351a8d62e',
+231 silly install resolved     bugs: { url: 'https://github.com/component/emitter/issues' },
+231 silly install resolved     homepage: 'https://github.com/component/emitter',
+231 silly install resolved     _id: 'component-emitter@1.2.0',
+231 silly install resolved     _shasum: 'ccd113a86388d06482d03de3fc7df98526ba8efe',
+231 silly install resolved     _from: 'component-emitter@*',
+231 silly install resolved     _npmVersion: '2.5.1',
+231 silly install resolved     _nodeVersion: '1.2.0',
+231 silly install resolved     _npmUser: { name: 'jongleberry', email: 'jonathanrichardong@gmail.com' },
+231 silly install resolved     maintainers:
+231 silly install resolved      [ [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object] ],
+231 silly install resolved     dist:
+231 silly install resolved      { shasum: 'ccd113a86388d06482d03de3fc7df98526ba8efe',
+231 silly install resolved        tarball: 'http://registry.npmjs.org/component-emitter/-/component-emitter-1.2.0.tgz' },
+231 silly install resolved     directories: {},
+231 silly install resolved     _resolved: 'https://registry.npmjs.org/component-emitter/-/component-emitter-1.2.0.tgz',
+231 silly install resolved     readme: 'ERROR: No README data found!' },
+231 silly install resolved   { name: 'component-query',
+231 silly install resolved     description: 'Query the DOM with selector engine fallback support',
+231 silly install resolved     version: '0.0.3',
+231 silly install resolved     keywords: [ 'query', 'selector', 'engine', 'dom', 'elements' ],
+231 silly install resolved     dependencies: {},
+231 silly install resolved     license: 'MIT',
+231 silly install resolved     main: 'index.js',
+231 silly install resolved     repository: { type: 'git', url: 'https://github.com/component/query.git' },
+231 silly install resolved     component: { scripts: [Object] },
+231 silly install resolved     bugs: { url: 'https://github.com/component/query/issues' },
+231 silly install resolved     homepage: 'https://github.com/component/query',
+231 silly install resolved     _id: 'component-query@0.0.3',
+231 silly install resolved     dist:
+231 silly install resolved      { shasum: '07f49dab7071fa9606725df53e607f468acdaacf',
+231 silly install resolved        tarball: 'http://registry.npmjs.org/component-query/-/component-query-0.0.3.tgz' },
+231 silly install resolved     _from: 'component-query@*',
+231 silly install resolved     _npmVersion: '1.3.24',
+231 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+231 silly install resolved     maintainers: [ [Object] ],
+231 silly install resolved     directories: {},
+231 silly install resolved     _shasum: '07f49dab7071fa9606725df53e607f468acdaacf',
+231 silly install resolved     _resolved: 'https://registry.npmjs.org/component-query/-/component-query-0.0.3.tgz',
+231 silly install resolved     readme: 'ERROR: No README data found!' },
+231 silly install resolved   { name: 'throttleit',
+231 silly install resolved     description: 'Throttle a function',
+231 silly install resolved     version: '1.0.0',
+231 silly install resolved     keywords: [],
+231 silly install resolved     repository: { type: 'git', url: 'git://github.com/component/throttle.git' },
+231 silly install resolved     devDependencies: { mocha: '^1.18.0' },
+231 silly install resolved     license: 'MIT',
+231 silly install resolved     component: { scripts: [Object] },
+231 silly install resolved     scripts: { test: 'mocha --reporter spec' },
+231 silly install resolved     gitHead: '19f9fd95782d372f2d0be6d5c60d60f8176d7ef8',
+231 silly install resolved     bugs: { url: 'https://github.com/component/throttle/issues' },
+231 silly install resolved     homepage: 'https://github.com/component/throttle',
+231 silly install resolved     _id: 'throttleit@1.0.0',
+231 silly install resolved     _shasum: '9e785836daf46743145a5984b6268d828528ac6c',
+231 silly install resolved     _from: 'throttleit@*',
+231 silly install resolved     _npmVersion: '2.1.18',
+231 silly install resolved     _nodeVersion: '1.0.2',
+231 silly install resolved     _npmUser: { name: 'dominicbarnes', email: 'dominic@dbarnes.info' },
+231 silly install resolved     maintainers:
+231 silly install resolved      [ [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object],
+231 silly install resolved        [Object] ],
+231 silly install resolved     dist:
+231 silly install resolved      { shasum: '9e785836daf46743145a5984b6268d828528ac6c',
+231 silly install resolved        tarball: 'http://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz' },
+231 silly install resolved     directories: {},
+231 silly install resolved     _resolved: 'https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz' } ]
+232 info install debounce@1.0.0 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+233 info install component-event@0.1.4 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+234 info install component-emitter@1.2.0 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+235 info install component-query@0.0.3 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+236 info install throttleit@1.0.0 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+237 info installOne debounce@1.0.0
+238 verbose installOne of debounce to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity not in flight; installing
+239 info installOne component-event@0.1.4
+240 verbose installOne of component-event to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity not in flight; installing
+241 info installOne component-emitter@1.2.0
+242 verbose installOne of component-emitter to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity not in flight; installing
+243 info installOne component-query@0.0.3
+244 verbose installOne of component-query to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity not in flight; installing
+245 info installOne throttleit@1.0.0
+246 verbose installOne of throttleit to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity not in flight; installing
+247 verbose lock using /Users/bmcmahen/.npm/_locks/debounce-d8d1e784ac4d29a1.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+248 verbose lock using /Users/bmcmahen/.npm/_locks/component-event-7af273e42b4f6414.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+249 verbose lock using /Users/bmcmahen/.npm/_locks/component-emitter-abde1e5d61008c13.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+250 silly install write writing debounce 1.0.0 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+251 silly cache addNamed cb debounce@1.0.0
+252 verbose unbuild node_modules/component-infinity/node_modules/debounce
+253 silly install write writing component-event 0.1.4 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+254 silly cache addNamed cb component-event@0.1.4
+255 verbose unbuild node_modules/component-infinity/node_modules/component-event
+256 silly install write writing component-emitter 1.2.0 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+257 silly cache addNamed cb component-emitter@1.2.0
+258 verbose unbuild node_modules/component-infinity/node_modules/component-emitter
+259 verbose lock using /Users/bmcmahen/.npm/_locks/component-query-c7a6803f2c0e9bd7.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+260 verbose lock using /Users/bmcmahen/.npm/_locks/throttleit-81fd4ff760b1a3b1.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+261 silly install write writing component-query 0.0.3 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+262 silly cache addNamed cb component-query@0.0.3
+263 verbose unbuild node_modules/component-infinity/node_modules/component-query
+264 silly install write writing throttleit 1.0.0 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+265 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+266 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+267 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+268 verbose tar unpack /Users/bmcmahen/.npm/debounce/1.0.0/package.tgz
+269 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+270 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+271 verbose tar unpack /Users/bmcmahen/.npm/component-event/0.1.4/package.tgz
+272 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+273 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+274 verbose tar unpack /Users/bmcmahen/.npm/component-emitter/1.2.0/package.tgz
+275 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+276 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+277 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+278 silly gunzTarPerm modes [ '755', '644' ]
+279 silly gunzTarPerm modes [ '755', '644' ]
+280 silly gunzTarPerm modes [ '755', '644' ]
+281 verbose tar unpack /Users/bmcmahen/.npm/component-query/0.0.3/package.tgz
+282 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+283 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+284 silly gunzTarPerm modes [ '755', '644' ]
+285 silly cache addNamed cb throttleit@1.0.0
+286 verbose unbuild node_modules/component-infinity/node_modules/throttleit
+287 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+288 silly gunzTarPerm extractEntry package.json
+289 verbose tar unpack /Users/bmcmahen/.npm/throttleit/1.0.0/package.tgz
+290 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+291 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm extractEntry package.json
+294 silly gunzTarPerm modes [ '755', '644' ]
+295 silly gunzTarPerm extractEntry package.json
+296 silly gunzTarPerm extractEntry .npmignore
+297 silly gunzTarPerm extractEntry index.js
+298 silly gunzTarPerm extractEntry .npmignore
+299 silly gunzTarPerm extractEntry index.js
+300 silly gunzTarPerm extractEntry LICENSE
+301 silly gunzTarPerm extractEntry index.js
+302 silly gunzTarPerm extractEntry .npmignore
+303 silly gunzTarPerm extractEntry index.js
+304 silly gunzTarPerm extractEntry package.json
+305 silly gunzTarPerm extractEntry .npmignore
+306 silly gunzTarPerm extractEntry test.js
+307 silly gunzTarPerm extractEntry History.md
+308 silly gunzTarPerm extractEntry Makefile
+309 silly gunzTarPerm extractEntry Readme.md
+310 silly gunzTarPerm extractEntry History.md
+311 silly gunzTarPerm extractEntry History.md
+312 silly gunzTarPerm extractEntry Makefile
+313 silly gunzTarPerm extractEntry History.md
+314 silly gunzTarPerm extractEntry Makefile
+315 silly gunzTarPerm extractEntry Readme.md
+316 silly gunzTarPerm extractEntry component.json
+317 silly gunzTarPerm extractEntry example.js
+318 silly gunzTarPerm extractEntry index.js
+319 silly gunzTarPerm extractEntry Readme.md
+320 silly gunzTarPerm extractEntry component.json
+321 silly gunzTarPerm extractEntry Readme.md
+322 silly gunzTarPerm extractEntry component.json
+323 silly gunzTarPerm extractEntry History.md
+324 silly gunzTarPerm extractEntry Makefile
+325 silly gunzTarPerm extractEntry test/index.html
+326 silly gunzTarPerm extractEntry example.html
+327 silly gunzTarPerm extractEntry test.html
+328 silly gunzTarPerm extractEntry Readme.md
+329 silly gunzTarPerm extractEntry component.json
+330 info preinstall component-emitter@1.2.0
+331 silly install resolved []
+332 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+333 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+334 verbose linkStuff [ false,
+334 verbose linkStuff   false,
+334 verbose linkStuff   false,
+334 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules' ]
+335 info linkStuff component-emitter@1.2.0
+336 verbose linkBins component-emitter@1.2.0
+337 verbose linkMans component-emitter@1.2.0
+338 verbose rebuildBundles component-emitter@1.2.0
+339 info install component-emitter@1.2.0
+340 info postinstall component-emitter@1.2.0
+341 verbose unlock done using /Users/bmcmahen/.npm/_locks/component-emitter-abde1e5d61008c13.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-emitter
+342 info preinstall component-query@0.0.3
+343 info preinstall component-event@0.1.4
+344 silly install resolved []
+345 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+346 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+347 verbose linkStuff [ false,
+347 verbose linkStuff   false,
+347 verbose linkStuff   false,
+347 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules' ]
+348 info linkStuff component-query@0.0.3
+349 verbose linkBins component-query@0.0.3
+350 verbose linkMans component-query@0.0.3
+351 verbose rebuildBundles component-query@0.0.3
+352 info preinstall debounce@1.0.0
+353 info install component-query@0.0.3
+354 info postinstall component-query@0.0.3
+355 silly prepareForInstallMany adding date-now@1.0.1 from debounce dependencies
+356 silly install resolved []
+357 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+358 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+359 verbose linkStuff [ false,
+359 verbose linkStuff   false,
+359 verbose linkStuff   false,
+359 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules' ]
+360 info linkStuff component-event@0.1.4
+361 verbose linkBins component-event@0.1.4
+362 verbose linkMans component-event@0.1.4
+363 verbose rebuildBundles component-event@0.1.4
+364 info install component-event@0.1.4
+365 silly cache add args [ 'date-now@1.0.1', null ]
+366 verbose cache add spec date-now@1.0.1
+367 silly cache add parsed spec { raw: 'date-now@1.0.1',
+367 silly cache add   scope: null,
+367 silly cache add   name: 'date-now',
+367 silly cache add   rawSpec: '1.0.1',
+367 silly cache add   spec: '1.0.1',
+367 silly cache add   type: 'version' }
+368 verbose addNamed date-now@1.0.1
+369 silly addNamed semver.valid 1.0.1
+370 silly addNamed semver.validRange 1.0.1
+371 silly mapToRegistry name date-now
+372 silly mapToRegistry using default registry
+373 silly mapToRegistry registry https://registry.npmjs.org/
+374 silly mapToRegistry uri https://registry.npmjs.org/date-now
+375 verbose addNameVersion registry:https://registry.npmjs.org/date-now not in flight; fetching
+376 verbose unlock done using /Users/bmcmahen/.npm/_locks/component-query-c7a6803f2c0e9bd7.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-query
+377 info postinstall component-event@0.1.4
+378 verbose unlock done using /Users/bmcmahen/.npm/_locks/component-event-7af273e42b4f6414.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/component-event
+379 verbose request uri https://registry.npmjs.org/date-now
+380 verbose request no auth needed
+381 info attempt registry request try #1 at 12:48:29
+382 verbose etag "4IVDPT1USQTTDVL345B8VOWJW"
+383 http request GET https://registry.npmjs.org/date-now
+384 info preinstall throttleit@1.0.0
+385 silly install resolved []
+386 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+387 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+388 verbose linkStuff [ false,
+388 verbose linkStuff   false,
+388 verbose linkStuff   false,
+388 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules' ]
+389 info linkStuff throttleit@1.0.0
+390 verbose linkBins throttleit@1.0.0
+391 verbose linkMans throttleit@1.0.0
+392 verbose rebuildBundles throttleit@1.0.0
+393 info install throttleit@1.0.0
+394 info postinstall throttleit@1.0.0
+395 verbose unlock done using /Users/bmcmahen/.npm/_locks/throttleit-81fd4ff760b1a3b1.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/throttleit
+396 http 304 https://registry.npmjs.org/date-now
+397 silly get cb [ 304,
+397 silly get   { date: 'Tue, 19 May 2015 18:48:29 GMT',
+397 silly get     via: '1.1 varnish',
+397 silly get     'cache-control': 'max-age=60',
+397 silly get     etag: '"4IVDPT1USQTTDVL345B8VOWJW"',
+397 silly get     age: '53',
+397 silly get     connection: 'keep-alive',
+397 silly get     'x-served-by': 'cache-dfw1820-DFW',
+397 silly get     'x-cache': 'HIT',
+397 silly get     'x-cache-hits': '1',
+397 silly get     'x-timer': 'S1432061309.709034,VS0,VE0',
+397 silly get     vary: 'Accept' } ]
+398 verbose etag https://registry.npmjs.org/date-now from cache
+399 verbose get saving date-now to /Users/bmcmahen/.npm/registry.npmjs.org/date-now/.cache.json
+400 silly cache afterAdd date-now@1.0.1
+401 verbose afterAdd /Users/bmcmahen/.npm/date-now/1.0.1/package/package.json not in flight; writing
+402 verbose afterAdd /Users/bmcmahen/.npm/date-now/1.0.1/package/package.json written
+403 silly install resolved [ { name: 'date-now',
+403 silly install resolved     version: '1.0.1',
+403 silly install resolved     description: 'A requirable version of Date.now()',
+403 silly install resolved     keywords: [],
+403 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+403 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/date-now.git' },
+403 silly install resolved     main: 'index',
+403 silly install resolved     homepage: 'https://github.com/Raynos/date-now',
+403 silly install resolved     contributors: [ [Object] ],
+403 silly install resolved     bugs:
+403 silly install resolved      { url: 'https://github.com/Raynos/date-now/issues',
+403 silly install resolved        email: 'raynos2@gmail.com' },
+403 silly install resolved     dependencies: {},
+403 silly install resolved     devDependencies:
+403 silly install resolved      { tape: '~0.2.2',
+403 silly install resolved        browserify: 'https://github.com/raynos/node-browserify/tarball/master',
+403 silly install resolved        testem: '~0.2.52' },
+403 silly install resolved     licenses: [ [Object] ],
+403 silly install resolved     scripts:
+403 silly install resolved      { test: 'node ./test',
+403 silly install resolved        build: 'browserify test/index.js -o test/static/bundle.js',
+403 silly install resolved        testem: 'testem' },
+403 silly install resolved     component: { scripts: [Object] },
+403 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+403 silly install resolved     readme: '# date-now\n\n[![build status][1]][2]\n\n[![browser support][3]][4]\n\n\nA requirable version of Date.now()\n\nUse-case is to be able to mock out Date.now() using require interception.\n\n## Example\n\n```js\nvar now = require("date-now")\n\nvar ts = now()\nvar ts2 = Date.now()\nassert.equal(ts, ts2)\n```\n\n## example of seed\n\n```\nvar now = require("date-now/seed")(timeStampFromServer)\n\n// ts is in "sync" with the seed value from the server\n// useful if your users have their local time being a few minutes\n// out of your server time.\nvar ts = now()\n```\n\n## Installation\n\n`npm install date-now`\n\n## Contributors\n\n - Raynos\n\n## MIT Licenced\n\n  [1]: https://secure.travis-ci.org/Raynos/date-now.png\n  [2]: http://travis-ci.org/Raynos/date-now\n  [3]: http://ci.testling.com/Raynos/date-now.png\n  [4]: http://ci.testling.com/Raynos/date-now\n',
+403 silly install resolved     readmeFilename: 'README.md',
+403 silly install resolved     _id: 'date-now@1.0.1',
+403 silly install resolved     _shasum: 'bb7d086438debe4182a485fb3df3fbfb99d6153c',
+403 silly install resolved     _from: 'date-now@1.0.1',
+403 silly install resolved     _resolved: 'https://registry.npmjs.org/date-now/-/date-now-1.0.1.tgz' } ]
+404 info install date-now@1.0.1 into /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+405 info installOne date-now@1.0.1
+406 verbose installOne of date-now to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce not in flight; installing
+407 verbose lock using /Users/bmcmahen/.npm/_locks/date-now-59ae91d164417114.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+408 silly install write writing date-now 1.0.1 to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+409 silly cache addNamed cb date-now@1.0.1
+410 verbose unbuild node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+411 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+412 verbose tar unpack /Users/bmcmahen/.npm/date-now/1.0.1/package.tgz
+413 verbose tar unpacking to /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+414 verbose gentlyRm vacuuming /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+415 silly gunzTarPerm modes [ '755', '644' ]
+416 silly gunzTarPerm extractEntry package.json
+417 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+418 silly gunzTarPerm extractEntry .npmignore
+419 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+420 silly gunzTarPerm extractEntry README.md
+421 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+422 silly gunzTarPerm extractEntry LICENCE
+423 silly gunzTarPerm modified mode [ 'LICENCE', 436, 420 ]
+424 silly gunzTarPerm extractEntry index.js
+425 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+426 silly gunzTarPerm extractEntry seed.js
+427 silly gunzTarPerm modified mode [ 'seed.js', 436, 420 ]
+428 silly gunzTarPerm extractEntry .testem.json
+429 silly gunzTarPerm modified mode [ '.testem.json', 436, 420 ]
+430 silly gunzTarPerm extractEntry .travis.yml
+431 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+432 silly gunzTarPerm extractEntry component.json
+433 silly gunzTarPerm modified mode [ 'component.json', 436, 420 ]
+434 silly gunzTarPerm extractEntry test/index.js
+435 silly gunzTarPerm modified mode [ 'test/index.js', 436, 420 ]
+436 silly gunzTarPerm extractEntry test/static/index.html
+437 silly gunzTarPerm modified mode [ 'test/static/index.html', 436, 420 ]
+438 info preinstall date-now@1.0.1
+439 silly install resolved []
+440 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+441 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+442 verbose linkStuff [ false,
+442 verbose linkStuff   false,
+442 verbose linkStuff   false,
+442 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules' ]
+443 info linkStuff date-now@1.0.1
+444 verbose linkBins date-now@1.0.1
+445 verbose linkMans date-now@1.0.1
+446 verbose rebuildBundles date-now@1.0.1
+447 info install date-now@1.0.1
+448 info postinstall date-now@1.0.1
+449 verbose unlock done using /Users/bmcmahen/.npm/_locks/date-now-59ae91d164417114.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce/node_modules/date-now
+450 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+451 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+452 verbose linkStuff [ false,
+452 verbose linkStuff   false,
+452 verbose linkStuff   false,
+452 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules' ]
+453 info linkStuff debounce@1.0.0
+454 verbose linkBins debounce@1.0.0
+455 verbose linkMans debounce@1.0.0
+456 verbose rebuildBundles debounce@1.0.0
+457 verbose rebuildBundles [ 'date-now' ]
+458 info install debounce@1.0.0
+459 info postinstall debounce@1.0.0
+460 verbose unlock done using /Users/bmcmahen/.npm/_locks/debounce-d8d1e784ac4d29a1.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity/node_modules/debounce
+461 verbose about to build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+462 info build /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+463 verbose linkStuff [ false,
+463 verbose linkStuff   false,
+463 verbose linkStuff   false,
+463 verbose linkStuff   '/Users/bmcmahen/Development/react-starters/cosmos-example/node_modules' ]
+464 info linkStuff component-infinity@0.0.6
+465 verbose linkBins component-infinity@0.0.6
+466 verbose linkMans component-infinity@0.0.6
+467 verbose rebuildBundles component-infinity@0.0.6
+468 verbose rebuildBundles [ 'component-emitter',
+468 verbose rebuildBundles   'component-event',
+468 verbose rebuildBundles   'component-query',
+468 verbose rebuildBundles   'debounce',
+468 verbose rebuildBundles   'throttleit' ]
+469 info install component-infinity@0.0.6
+470 info postinstall component-infinity@0.0.6
+471 verbose unlock done using /Users/bmcmahen/.npm/_locks/component-infinity-f7014dd655a79abc.lock for /Users/bmcmahen/Development/react-starters/cosmos-example/node_modules/component-infinity
+472 verbose stack Error: The package classnames does not satisfy its siblings' peerDependencies requirements!
+472 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
+472 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
+472 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+472 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+472 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+472 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+472 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+472 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+472 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+472 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+473 verbose cwd /Users/bmcmahen/Development/react-starters/cosmos-example
+474 error Darwin 14.3.0
+475 error argv "node" "/usr/local/bin/npm" "install" "component-infinity" "--save"
+476 error node v0.11.13
+477 error npm  v2.4.1
+478 error code EPEERINVALID
+479 error peerinvalid The package classnames does not satisfy its siblings' peerDependencies requirements!
+479 error peerinvalid Peer react-modal@0.2.0 wants classnames@^1.2.0
+480 verbose exit [ 1, true ]

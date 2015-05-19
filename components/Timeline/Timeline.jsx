@@ -8,6 +8,7 @@ import classNames from 'classnames'
 import Immutable from 'immutable'
 import Tween from 'component-tween'
 import scrollTo from 'scroll-to'
+import Infinite from 'component-infinity'
 
 require('./Timeline.css')
 
@@ -17,11 +18,13 @@ class Timeline extends Component {
     yearSpan: PropTypes.number,
     activeItem: PropTypes.string,
     content: PropTypes.instanceOf(Immutable.List).isRequired,
-    onItemSelected: PropTypes.func
+    onItemSelected: PropTypes.func,
+    container: PropTypes.string
   }
 
   static defaultProps = {
-    yearSpan: 10
+    yearSpan: 10,
+    container: 'window'
   }
 
   static displayName = 'Timeline'
@@ -36,6 +39,10 @@ class Timeline extends Component {
   }
 
   componentDidMount(){
+    this._scrollContainer = this.props.container === 'window'
+      ? window
+      : document.querySelector(this.props.container)
+
     // run masonry on our rendered layout
     const container = React.findDOMNode(this.refs.container)
     const width = container.clientWidth
@@ -56,11 +63,30 @@ class Timeline extends Component {
         }
       }
       this.setState({ layoutComplete: true })
+      this.infinity && this.infinity.refresh()
     })
 
     imagesLoaded(container, () => {
       this.masonry.layout()
     })
+
+    this.createInfinity()
+  }
+
+  createInfinity(){
+    if (this.infinity) {
+      return
+    }
+    this.infinity = new Infinite(this._scrollContainer)
+    let years = document.querySelectorAll('[data-year]')
+    for (let i = 0; i < years.length; i++){
+      let year = years[i]
+      this.infinity.add(year, year.getAttribute('data-year'))
+    }
+    this.infinity.load((el, year) => {
+      this.setState({ activeYear: year })
+    })
+    this.infinity.refresh()
   }
 
   componentDidUpdate(prevProps){
@@ -89,6 +115,7 @@ class Timeline extends Component {
         <Map
           onYearSelected={this.onYearSelected}
           dateRange={this.state.dateRange}
+          activeYear={this.state.activeYear}
         />
         <div className='Timeline__line' role='presentation'/>
         <ol className='Timeline__content' ref='container'>
