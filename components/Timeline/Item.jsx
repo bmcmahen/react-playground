@@ -30,7 +30,7 @@ class Item extends Component {
         <div className='Timeline__item-container'>
           <div>
             {this.props.image && <img src={this.props.image} />}
-            <div>
+            <div className='Timeline__item-meta'>
               <span className='Item__date'>
                 {this.props.date}
               </span>

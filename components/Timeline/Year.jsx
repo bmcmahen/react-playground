@@ -14,10 +14,13 @@ class Year extends Component {
 
   render(){
     return (
-      <li className='Timeline__year masonry-item' tabIndex='0'>
-        <div className='Year__label-content'>
-          {this.props.year}
-        </div>
+      <li
+        data-year={this.props.year}
+        className='Timeline__year masonry-item'
+        tabIndex='0'>
+          <div className='Year__label-content'>
+            <span>{this.props.year}</span>
+          </div>
       </li>
     )
   }

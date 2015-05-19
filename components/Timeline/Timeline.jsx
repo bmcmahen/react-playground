@@ -1,10 +1,13 @@
 import React, {Component, PropTypes} from 'react'
 import Item from './Item.jsx'
 import YearLabel from './Year.jsx'
+import Map from './Map.jsx'
 import Masonry from 'masonry-layout'
 import imagesLoaded from 'imagesloaded'
 import classNames from 'classnames'
 import Immutable from 'immutable'
+import Tween from 'component-tween'
+import scrollTo from 'scroll-to'
 
 require('./Timeline.css')
 
@@ -83,6 +86,10 @@ class Timeline extends Component {
 
     return (
       <section className={classes}>
+        <Map
+          onYearSelected={this.onYearSelected}
+          dateRange={this.state.dateRange}
+        />
         <div className='Timeline__line' role='presentation'/>
         <ol className='Timeline__content' ref='container'>
           {content}
@@ -140,6 +147,12 @@ class Timeline extends Component {
     }
   }
 
+  onYearSelected(year){
+    const el = document.querySelector(`[data-year='${year}']`)
+    scrollToElement(el)
+    console.log('scroll to el', el)
+  }
+
 }
 
 function nearestTenUp(num, range){
@@ -156,9 +169,9 @@ function getYear(doc){
 
 function getDateRange(docs, range){
   const first = nearestDown(getYear(docs.first()), range)
-  const last = nearestTenUp(getYear(docs.last()), range)
+  const last = nearestDown(getYear(docs.last()), range)
   let dateRange = []
-  for (let i = first; i <= last + 10; i += 10) {
+  for (let i = first; i <= last; i += range) {
     dateRange.push(i)
   }
   return dateRange
@@ -173,6 +186,16 @@ function parseDates(docs){
     }
     return dates
   }
+}
+
+/**
+ * Scroll to a specified element
+ * @param {element} el
+ */
+
+function scrollToElement(el){
+  let pos = (window.scrollY || document.documentElement.scrollTop) + el.getBoundingClientRect().top
+  scrollTo(0, pos)
 }
 
 

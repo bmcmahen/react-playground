@@ -11,6 +11,7 @@ class Map extends Component {
 
   constructor(props){
     super(props)
+    this.renderDate = this.renderDate.bind(this)
   }
 
   render(){
@@ -24,12 +25,14 @@ class Map extends Component {
   renderDate(num){
     return (
       <li key={num} className='Map__item'>
-        <a onClick={this.selectYear.bind(this, num)} href='#'>{num}</a>
+        <a onClick={this.selectYear.bind(this, num)} href='#'>
+          {num}
+        </a>
       </li>
     );
   }
 
-  selectYear(e, num){
+  selectYear(num, e){
     e.preventDefault()
     this.props.onYearSelected(num)
   }

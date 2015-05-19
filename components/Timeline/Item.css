@@ -14,9 +14,25 @@
   z-index: 1;
 }
 
+.Timeline__item-meta {
+  background: #eee;
+  padding: 10px;
+  border-radius: 6px;
+}
+
 .Timeline__item--image img {
   max-width: 100%;
   height: auto;
+  border-radius: 6px 6px 0 0;
+}
+
+.Timeline__item--image .Timeline__item-meta {
+  border-radius: 0 0 6px 6px;
+}
+
+.Timeline__item--image .Timeline__item-container > div {
+  padding: 0;
+  background: none;
 }
 
 .Timeline__item-container {
@@ -25,8 +41,6 @@
 }
 
 .Timeline__item-container > div {
-  background: #eee;
-  padding: 10px;
 }
 
 .Timeline__item--showing-left .Timeline__connector {
@@ -57,7 +71,6 @@
   width: 15px;
   right: auto;
   left: 0;
-
 }
 
 .Timeline__circle {
