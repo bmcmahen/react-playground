@@ -1,0 +1,6 @@
+.Block {
+  position: absolute;
+  display: block;
+  background: #eee;
+  transition: all 0.5s;
+}
